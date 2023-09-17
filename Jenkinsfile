@@ -13,10 +13,7 @@ pipeline {
             steps {
                 echo "Building the image"
                 sh "docker build -t my-note-app ."
-               
-                
-                
-            }
+                }
         }
         stage("Push to Docker Hub"){
             steps {
@@ -27,16 +24,13 @@ pipeline {
                 sh "docker login -u ${env.dockerHubUser} -p ${env.dockerHubPass}"
                 sh "docker push ${env.dockerHubUser}/note-app:latest"
                 }
-                
-                
             }
         }
         stage("Deploy the app"){
             steps {
                 echo "Deploying the container"
                 sh "docker-compose down && docker-compose up -d"
-                
-            }
+                }
         }
     }
 }
