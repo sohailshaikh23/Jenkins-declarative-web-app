@@ -7,7 +7,7 @@ This is a simple notes app built with React and Django.
 3. React
 
 ## Installation
-1. Clone the repository
+1. Clonining the repository
 ```
 git clone https://github.com/sohailshaikh23/Jenkins-declarative-web-app.git
 ```
