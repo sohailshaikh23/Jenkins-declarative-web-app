@@ -12,7 +12,7 @@ This is a simple notes app built with React and Django.
 git clone https://github.com/sohailshaikh23/Jenkins-declarative-web-app.git
 ```
 
-2. Build the app
+2. Build the application
 ```
 docker build -t notes-app .
 ```
